@@ -23,12 +23,12 @@ public class RandomNumber {
         Random random= new Random();
         
         for (int i=1; i<=4; i++){
-            int ran= random.nextInt(10)+1;
+            int randomNum= random.nextInt(10)+1;
             //skipping number if already in list
             try{
-            if (rand_numbers.contains(ran))
+            if (rand_numbers.contains(randomNum))
             {
-                System.out.println("Number "+ ran + " repeated. So not adding it to list again.\n");
+                System.out.println("Number "+ randomNum + " repeated. So not adding it to list again.\n");
                 throw new Exception();
             }
             }
@@ -39,7 +39,7 @@ public class RandomNumber {
                 continue;
                 
             }
-            rand_numbers.add(ran);
+            rand_numbers.add(randomNum);
             
         }
         System.out.println(rand_numbers);
