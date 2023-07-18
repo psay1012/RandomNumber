@@ -10,7 +10,7 @@ import java.util.Random;
 
 /**
  *
- * @author Pooja
+ * @author Pooja, Jatin
  */
 public class RandomNumber {
 
