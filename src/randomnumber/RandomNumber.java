@@ -15,7 +15,7 @@ import java.util.Random;
 public class RandomNumber {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments dummy commit
      */
     public static void main(String[] args) {
         
