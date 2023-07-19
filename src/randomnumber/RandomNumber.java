@@ -19,14 +19,14 @@ public class RandomNumber {
      */
     public static void main(String[] args) {
         
-        ArrayList rand_number= new ArrayList(4);
+        ArrayList rand_numbers= new ArrayList(4);
         Random random= new Random();
         
         for (int i=1; i<=4; i++){
             int randomNum= random.nextInt(10)+1;
             //skipping number if already in list
             try{
-            if (rand_number.contains(randomNum))
+            if (rand_numbers.contains(randomNum))
             {
                 System.out.println("Number "+ randomNum + " repeated. So not adding it to list again.\n");
                 throw new Exception();
@@ -39,10 +39,10 @@ public class RandomNumber {
                 continue;
                 
             }
-            rand_number.add(randomNum);
+            rand_numbers.add(randomNum);
             
         }
-        System.out.println(rand_number);
+        System.out.println(rand_numbers);
         //System.out.println(rand_numbers.size());
     }    
 }
